@@ -16,6 +16,11 @@ public class Ordered {
 		System.out.println("Value for z?");
 		int z = in.nextInt();
 
+		boolean isAscending = x<y && y<z;
+		boolean isDescending = x>y && y>z;
+		boolean isOrdered = isAscending || isDescending;
+		
+		System.out.println(isOrdered);
 	}
 
 }
